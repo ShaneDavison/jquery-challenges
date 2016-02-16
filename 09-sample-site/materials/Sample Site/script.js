@@ -37,7 +37,12 @@ $(document).ready(function() {
 
 	$(".bottom_button").click(function(event) {
 		event.preventDefault();
-		$(this).prev().slideToggle("fast");
+		$(this).prev().toggle(4000);
+	});
+
+	$("a").click(function(event) {
+		event.preventDefault();
+		$("a").css({"background-color": "#FFFF00"})
 	});
 
 }); 
