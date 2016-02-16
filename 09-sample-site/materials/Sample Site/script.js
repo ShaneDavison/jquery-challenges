@@ -35,4 +35,9 @@ $(document).ready(function() {
 		$(this).removeClass('makeBorder')
 	});	
 
+	$(".bottom_button").click(function(event) {
+		event.preventDefault();
+		$(this).prev().slideToggle("fast");
+	});
+
 }); 
